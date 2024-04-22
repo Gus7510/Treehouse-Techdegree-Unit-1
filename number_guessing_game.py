@@ -15,6 +15,8 @@ Project 1 - Number Guessing Game
 
 
 import random # importing random library
+from sys import exit # import exit so we may use it later
+
 
 high_score = 0
 
@@ -69,7 +71,7 @@ def start_game(): # start_game function
             play_again = input(" Would you like to play again? (y)es / (n)o ")
             if play_again.lower() == "n":
                 print("the game is over, see ya next time! ")
-                break
+                exit(0) # function to terminate the program
             
             else:
                 
@@ -89,6 +91,12 @@ def start_game(): # start_game function
 start_game()
 
 
+"""
+Code from websites:
 
+https://www.freecodecamp.org/news/python-exit-how-to-use-an-exit-function-in-python-to-stop-a-program/
+https://stackoverflow.com/questions/45066518/nameerror-name-exit-is-not-defined
+
+"""
 
 
